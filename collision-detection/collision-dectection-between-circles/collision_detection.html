@@ -1,0 +1,16 @@
+<script>
+    const circle1 = {x: 10, y: 10, radius: 10};
+    const circle2 = {x: 20, y: 10, radius: 10};
+
+    let dx = circle1.x - circle2.x;
+    let dy = circle1.y - circle2.y;
+    let distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance < circle1.radius + circle2.radius) {
+        console.log('Collision');
+    } else if (distance === circle1.radius + circle2.radius) {
+        console.log('Touching');
+    } else {
+        console.log('No Collision');
+    }
+</script>
